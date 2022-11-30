@@ -45,7 +45,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: harbor.h2o-2-2257.h2o.vmware.com/tap/minseok-supply-chain/tanzu-java-web-app-my-space@sha256:917ec52dfd297a9de04364808ad76d6082d3bddbfae74b7a2b895ff69899c556
+        image: harbor.h2o-2-2257.h2o.vmware.com/tap/minseok-supply-chain/tanzu-java-web-app-my-space@sha256:5801e2dd73be8a7cd2df96b8fcd593c5f535afc1a9e167b1bab19e86541b82e3
         name: workload
         ports:
         - containerPort: 8080
