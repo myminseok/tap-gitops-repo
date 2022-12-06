@@ -3,7 +3,7 @@ kind: APIDescriptor
 metadata:
   name: tanzu-java-web-app
   annotations:
-    autoscaling.knative.dev/minScale: ""
+    autoscaling.knative.dev/minScale: "1"
   labels:
     apis.apps.tanzu.vmware.com/register-api: "true"
     app.kubernetes.io/part-of: tanzu-java-web-app

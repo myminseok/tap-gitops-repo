@@ -16,7 +16,7 @@ spec:
   template:
     metadata:
       annotations:
-        autoscaling.knative.dev/minScale: ""
+        autoscaling.knative.dev/minScale: "1"
         boot.spring.io/actuator: http://:8081/actuator
         boot.spring.io/version: 2.5.8
         conventions.carto.run/applied-conventions: |-
@@ -46,7 +46,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: infra-harbor2.lab.pcfdemo.net/tap/minseok-supply-chain/tanzu-java-web-app-my-space2@sha256:8edda9d7cbd2dedebc8665363446b495c17884355cface40391291b5697d79cb
+        image: infra-harbor2.lab.pcfdemo.net/tap/minseok-supply-chain/tanzu-java-web-app-my-space2@sha256:ca35a4579751f26f11c1e298a63618ce5eddedcc541bb45734a353920a7f147c
         name: workload
         ports:
         - containerPort: 8080
